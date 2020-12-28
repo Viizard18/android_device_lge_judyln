@@ -83,10 +83,5 @@ PRODUCT_PACKAGES += \
     se_nq_extn_client \
     libchrome.vendor
 
-# QTI performance
-PRODUCT_BOOT_JARS += \
-    QPerformance \
-    UxPerformance
-
 # common judy (sdm845)
 $(call inherit-product, device/lge/sdm845-common/sdm845.mk)
