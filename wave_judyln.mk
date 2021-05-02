@@ -17,7 +17,6 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
@@ -30,14 +29,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, device/lge/judyln/device.mk)
 
 # Inherit some common DotOS stuff.
-$(call inherit-product, vendor/dot/config/common.mk)
+$(call inherit-product, vendor/wave/configs/common.mk)
 
 # Overlays (inherit after vendor/cm to ensure we override it)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Device identifiers
 
-PRODUCT_NAME := dot_judyln
+PRODUCT_NAME := wave_judyln
 PRODUCT_DEVICE := judyln
 PRODUCT_BRAND := lge
 PRODUCT_MANUFACTURER := LGE
@@ -53,5 +52,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=judyln \
     PRODUCT_NAME=judyln_lao_com \
 
-# DotOs
+# WaveOS
 TARGET_BOOT_ANIMATION_RES := 1440
+TARGET_GAPPS_ARCH := arm64

@@ -16,8 +16,8 @@
 #
 
 PRODUCT_MAKEFILES += \
-    $(LOCAL_DIR)/dot_judyln.mk
+    $(LOCAL_DIR)/wave_judyln.mk
 
 COMMON_LUNCH_CHOICES := \
-    dot_judyln-userdebug \
-    dot_judyln-eng
+    wave_judyln-userdebug \
+    wave_judyln-eng
