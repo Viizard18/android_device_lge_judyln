@@ -16,8 +16,8 @@
 #
 
 PRODUCT_MAKEFILES += \
-    $(LOCAL_DIR)/wave_judyln.mk
+    $(LOCAL_DIR)/corvus_judyln.mk
 
 COMMON_LUNCH_CHOICES := \
-    wave_judyln-userdebug \
-    wave_judyln-eng
+    corvus_judyln-userdebug \
+    corvus_judyln-eng
